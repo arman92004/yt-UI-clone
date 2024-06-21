@@ -1,6 +1,5 @@
 {
-  require("dotenv").config();
-  let api_key = process.env.API_KEY;
+  let api_key = "AIzaSyACJA8ddZ47ouH3zoRNZGdVJqorT6U6yXo";
   const video_http = "https://www.googleapis.com/youtube/v3/videos?";
   const channel_http = "https://www.googleapis.com/youtube/v3/channels?";
   const videoCardContainer = document.querySelector('.video-container');
