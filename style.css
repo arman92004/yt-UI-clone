@@ -1,0 +1,520 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body,html{
+        height: 100%;
+        margin: 0;
+
+    }
+    body{
+      
+      background-color:transparent;
+    }
+    html{
+      padding-top:65px ;
+      background-color: rgba(0, 0, 0,0.95);
+    }
+
+    .containner {
+        display: flex;
+        height: 100%;
+        font-family: Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        overflow: hidden; /* Hide the main container's scrollbar */
+    }
+
+    .sectioon {
+        color: white;
+        overflow: auto; /* Enable scrolling for each section */
+   
+    }
+
+    .row{
+      
+      position: fixed;
+      top: 70px;
+      padding-left: 20px;
+      /* left: 260px; */
+      width: 100%;
+      z-index: 100;
+ 
+    }
+
+    .border{
+      border-radius: 20px;
+    }
+  
+    #sectioon1 {
+       flex: 1;
+    }
+
+    #sectioon2 {
+        flex: 5.4;
+        margin-top: 60px;
+        
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        padding: 12px 20px;
+        margin-bottom: 10px;
+      
+        
+    }
+
+    .ham{
+        height: 24px;
+        width: 24px;
+        color: white;
+        padding-top:2px;
+    }
+    .ham:hover{
+      cursor: pointer;
+    }
+
+.left-button{
+    display: flex;
+    
+    min-width: 15%;
+}
+
+.yt-button{
+    display: flex;
+    color: white;
+    margin-left: 15px;
+    letter-spacing: -1.3px;
+    font-family: Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.yt-button h3{
+    margin-top: 6px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+
+    /* Targeting the inner triangle by class */
+.inner-triangle path {
+    fill: white;
+}
+.yt-text{
+    transform: scaleY(1.3);
+}
+.search-bar{
+    display: flex;
+    width: 50%;
+ 
+    height: 40px;
+
+}
+.search{
+    width: 90%;
+    font-family: Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    border: 1px solid rgba(95, 95, 95, 0.516);
+    border-radius: 40px 0px 0px 40px ;
+    
+    
+    
+}
+.search-bar:focus + .search {
+  /* Style for the div when the input is focused */
+  border: 8px solid blue; /* Add your desired border style */
+}
+
+.search input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding-left: 3%;
+   
+    font-weight: 400;
+
+}
+.search-icon{
+    color: white;
+    display: inline;
+    border: 1px solid rgba(95, 95, 95, 0.516);
+    border-left: none;
+    padding: 0px  20px;
+    padding-top: 1%;
+    border-radius: 0px 40px 40px 0px ;
+    background-color: rgba(54, 54, 54, 0.516);
+}
+.search-icon:hover , .mic:hover , .search-icon svg:hover , .search-icon label:hover{
+  cursor: pointer;
+}
+
+.mic {
+    color: white;
+    background-color: rgba(54, 54, 54, 0.516);
+    border-radius: 50%;
+    padding: .8% 1.4%;
+    border: 1px solid rgba(95, 95, 95, 0.516);
+
+
+    margin-left: 2.5%;
+}
+.create{
+    padding-top: 4%;
+}
+.right-button{
+  width: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+.bi-bell{
+    font-size: 20px;
+    transform: scaleY(1.2);
+    padding-top: 10px;
+    margin: 0px 5px;
+
+}
+
+.user{
+    color: white;
+    background-color: rgb(255, 111, 0);
+    border-radius: 50%;
+    width:40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 25px;
+}
+
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    padding-right: 8px;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.516) ;
+    padding-bottom: 5%;
+  
+}
+.menu-items{
+    padding: 6%;
+    display: flex;
+   
+    justify-content: space-between;
+    border-radius: 10px 10px 10px 10px;
+}
+.heads{
+  padding: 6%;
+  justify-content: center;
+}
+
+.menu-items:hover{
+    background-color: rgba(54, 54, 54, 0.638);
+}
+.menu-items.hovered:hover{
+    background-color: rgba(230, 228, 228, 0.667);
+}
+.right-button:hover , .right-button svg:hover , .video{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-items h6{
+    width: 134px;
+    padding-top: 1%;
+    margin: 0px;
+    font-weight: 400;
+}
+.ni-youtube{
+  width: 40px;
+}
+.shorts-icon{
+    height: 24px;
+    width: 24px;
+}
+.subscriptions-icon{
+    height: 20px;
+    width: 20px;
+}
+.subscriptions h6{
+    padding-right: 17%;
+}
+.playlists{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 15px;
+    padding-right: 8px;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.516) ;
+   
+}
+.library-icon{
+    height: 24px;
+    width: 24px;
+}
+.fa-solid{
+    padding-top: 3px;
+    padding-left: 5px;
+}
+.watch-later h6{
+    padding-right: 28%;
+}
+.watch-later svg{
+    padding-left: 2%;
+}
+.liked i{
+    font-size: 20px;
+    padding-left: 2%;
+}
+.liked h6{
+    padding-right: 51%;
+}
+
+/* For the track (the area the scrollbar moves along) */
+::-webkit-scrollbar {
+    width: 8px; /* Change the width of the scrollbar */
+    
+  }
+body::-webkit-scrollbar {
+    width: 0px; /* Change the width of the scrollbar */
+    
+  }
+  
+ 
+  /* For the thumb (the draggable part of the scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(132, 131, 131); /* Change the background color of the thumb */
+    border-radius: 6px; /* Round the corners of the thumb */
+  }
+  #sectioon1::-webkit-scrollbar-thumb{
+    background: transparent;
+  }
+  #sectioon1:hover::-webkit-scrollbar-thumb{
+    background: rgb(132, 131, 131);
+  }
+  
+  /* For the track piece that is not covered by the thumb */
+  ::-webkit-scrollbar-track {
+    background:transparent; /* Change the background color of the track */
+  }
+  
+  /* For the buttons (arrows) at the top and bottom of the scrollbar */
+  ::-webkit-scrollbar-button {
+    background: none; /* Change the background color of the buttons */
+  }
+  
+  /* For the buttons when the mouse hovers over them */
+  ::-webkit-scrollbar-button:hover {
+    background: #777; /* Change the background color of the hovered buttons */
+  }
+  #sectioon1 {
+    margin-right: 5px; /* Adjust the value as needed */
+  }
+  .subs{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    padding-right: 8px;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.516) ;
+    padding-bottom: 5%;
+  }
+  .subs img{
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+  }
+
+
+  
+  
+  .explore,.more , .options ,.copyright{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 15px;
+    padding-right: 8px;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.516) ;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .trending svg{
+    rotate: 40deg;
+    transform: scaleX(-1);
+    
+  }
+  .copyright{
+    padding: 25px;
+    
+  }
+  .copyright h6{
+    font-size: 15px;
+    font-weight: 100;
+    line-height:23px;
+  }
+  .copyright p{
+    font-weight: 100;
+    font-size: 13px;
+  }
+
+h5{
+    font-size: 18px;
+    width: 200px;
+    font-weight: 400;
+}
+  .films i{
+    font-size: 18px;
+  }
+  .live svg{
+    padding-left: 5px;
+  }
+  .gaming svg{
+    padding-left: 5px;
+  }
+
+  .news svg{
+    padding-left: 5px;
+
+  }
+  .sports svg{
+    padding-left: 5px;
+  }
+  .learning svg{
+    padding-left: 5px;
+  }
+
+  .yt-music-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+
+  .yt-kids svg{
+    rotate: 340deg;
+  }
+ 
+
+/* smaller side bar */
+.smaller-sidebar{
+  display: none;
+  margin: 0px ;
+  flex-direction: column;
+}
+.items{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.items h6{
+  padding: 8px 0px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+
+
+/* video */  
+
+.video-container{
+    font-size: 14px;
+    width: 100% ;
+  
+    padding: 20px;
+    padding-top: 0px;
+   
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-gap: 20px 25px;
+    
+}
+
+.video{
+    min-height: 250px;
+    height: auto;
+
+    
+}
+.thumbnail {
+  border-radius: 15px;
+
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: opacity 0.3s; /* Add a smooth transition effect */
+}
+
+.video iframe {
+  position: absolute;
+ 
+  display: none;
+  border-radius: 15px;
+  width: 27%;
+  /* width: 100%; */
+
+  height: 220px;
+  object-fit: cover;
+}
+
+.thumbnail:hover {
+  opacity: 0; 
+  display: none;
+}
+
+.video:hover iframe {
+  display: block;
+  opacity: 1;
+}
+
+
+.content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+
+}
+
+.channel-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.title{
+    font-size: 14px;
+    width: 100%;
+   
+    overflow: hidden;
+}
+.info h4{
+  margin: 0px;
+}
+.channel-name , .view-count{
+    font-size: 14px;
+    margin: 2px 0;
+    color: #979797;
+}
+
+/* for search input */
+.no-border {
+    border: none !important;
+    outline: none;
+  }
+  input{
+    color: white;
+  }
+  
