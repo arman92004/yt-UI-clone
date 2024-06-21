@@ -1,5 +1,5 @@
 {
-
+  require("dotenv").config();
   let api_key = process.env.API_KEY;
   const video_http = "https://www.googleapis.com/youtube/v3/videos?";
   const channel_http = "https://www.googleapis.com/youtube/v3/channels?";
